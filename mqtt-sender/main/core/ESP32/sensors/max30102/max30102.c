@@ -46,7 +46,7 @@ bool check_max30102()
 
 char *get_max30102(int a)
 {
-    for (int i = 0; i<6; i++){
+    for (int i = 0; i<8; i++){
     do
     {
         max30102_update(&max30102, &result);

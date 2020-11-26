@@ -16,3 +16,5 @@ The same principle could be applied with wearable technologies (i.e. Smartwatch)
 
 ### Future Challenges
 Reduce the size of the prototype to a wearable device, or reuse available hardware for smartwatches and develop the applications to read sensor data and send it to the tangle, through LTE.
+
+## Here the explanation video:

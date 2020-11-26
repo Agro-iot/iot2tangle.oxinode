@@ -18,3 +18,5 @@ The same principle could be applied with wearable technologies (i.e. Smartwatch)
 Reduce the size of the prototype to a wearable device, or reuse available hardware for smartwatches and develop the applications to read sensor data and send it to the tangle, through LTE.
 
 ## Here the explanation video:
+
+[![video](https://user-images.githubusercontent.com/69220256/100308631-da4c1e00-2f76-11eb-8fed-e0776503e728.png)](https://youtu.be/vLC41i2jcpw)

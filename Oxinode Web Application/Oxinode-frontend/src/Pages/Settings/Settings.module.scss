@@ -1,0 +1,27 @@
+.bg {
+  background-color: #f2faf5;
+}
+
+.cardTelegram {
+  width: 45%;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.cardTelegramActions{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  button{
+	margin-left: 1rem;
+	float: right;
+  }
+}
+
+// Movil
+@media (min-width: 320px) and (max-width: 600px) {
+  .cardTelegram{
+    width: 80%;
+  }
+}

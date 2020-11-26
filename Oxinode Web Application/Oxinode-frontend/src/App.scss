@@ -1,0 +1,40 @@
+@import "./assets/css/Display";
+@import "./assets/css/Variables";
+@import "./assets/css/Text";
+@import "~materialize-css/dist/css/materialize.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+
+html, body {
+  font: {
+    family: 'Noto Sans KR', sans-serif;
+  };
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav{
+  a{
+    cursor: pointer;
+  }
+}
+
+.swal2-modal {
+  background: {
+    color: rgb(31, 31, 31) !important;
+  };
+
+  input[type=text], input[type=password], input[type=number], input[type=email] {
+    color: white;
+  }
+}

@@ -1,0 +1,96 @@
+.bg {
+  background-color: #f2faf5;
+}
+
+$border-radios: 10px;
+.tableRules {
+  margin-top: 3rem;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  border-radius: $border-radios;
+  border-style: hidden; /* hide standard table (collapsed) border */
+
+  thead{
+	background-color: #90caf9;
+
+	tr:first-child,th:first-child,&{
+	  border-top-left-radius: $border-radios!important;
+	}
+	tr:first-child,th:last-child,&{
+	  border-top-right-radius: $border-radios!important;
+	}
+  }
+
+  tbody {
+	background-color: #C1DEF5;
+
+	tr:last-child{
+	  th:first-child,&{
+		border-bottom-left-radius: $border-radios!important;
+	  }
+	}
+	tr:last-child{
+	  th:last-child,&{
+		border-bottom-right-radius: $border-radios!important;
+	  }
+	}
+
+	th {
+	  padding-top: 0;
+	  padding-bottom: 0;
+	}
+	tr{
+	  &:hover{
+		background-color: #e3f2fd !important;
+	  }
+	}
+  }
+
+  // Dispositivo
+  th:nth-child(1) {
+	width: 20%;
+  }
+
+  // Comparacion
+  th:nth-child(2) {
+	width: 10%;
+  }
+
+  // Numero
+  th:nth-child(3) {
+	width: 15%;
+  }
+
+  // Mensaje
+  th:nth-child(4) {
+	width: 30%;
+  }
+
+  // Editar
+  th:nth-child(5) {
+	width: 5%;
+  }
+
+  // Eliminar
+  th:nth-child(6) {
+	width: 5%;
+  }
+
+  // Activar
+  th:nth-child(7) {
+	width: 5%;
+	color: black!important;
+  }
+}
+
+.inputsTable {
+  margin: 0 !important;
+
+  label {
+	color: black;
+  }
+
+}

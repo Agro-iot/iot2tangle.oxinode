@@ -1,0 +1,91 @@
+@import "../../assets/css/Utils";
+@import "../../assets/css/Variables";
+
+
+.card-connections {
+  margin-top: 0.5rem;
+
+  .card {
+	border-radius: 15px;
+	box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.75);
+  }
+
+  .col {
+	margin-bottom: 1rem;
+  }
+
+  .card-action {
+	border-radius: 0 0 15px 15px;
+  }
+}
+
+.card-content {
+  .material-icons {
+	vertical-align: middle;
+  }
+}
+
+.connection-wrapper {
+  background: {
+	color: rgba(0, 0, 0, 0.4);
+  };
+
+}
+
+.bg-connection {
+  background: {
+	image: url("https://scontent.xx.fbcdn.net/v/t1.15752-9/111713404_312019813274550_6288922927656537979_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_eui2=AeHMRFDasbVpSrwe7WYkHcTNMQpD_YIjMhYxCkP9giMyFqhhHrds6_f8jZXElpGM081ioevdeJ_ZPtepVRiuYBjP&_nc_ohc=ZxJSJpG5fREAX-BMyaS&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=c69fb388215afe46357805b758ceac48&oe=5F5909ED");
+	position: center;
+	repeat: no-repeat;
+	size: cover;
+  };
+}
+
+.wrapper-link-dashboard {
+  background-color: #f2faf5;
+  border-bottom-left-radius: 20px!important;
+  border-bottom-right-radius: 20px!important;
+
+  pre{
+	text-transform: uppercase;
+  }
+
+  span{
+	text-transform: none;
+  }
+
+  .card-action:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .card-action{
+	border-bottom-left-radius: 20px!important;
+	border-bottom-right-radius: 20px!important;
+
+	padding: 0;
+	margin: 0;
+	button{
+	  width: 25%!important;
+	  height: 100%!important;
+
+	  &:first-child{
+		border-bottom-left-radius: 20px!important;
+	  }
+
+	  &:last-child{
+		border-bottom-right-radius: 20px!important;
+	  }
+	}
+  }
+}
+
+#fab {
+  &-delete-connection {
+	margin-right: 7em;
+  }
+
+  &-settings {
+	margin-right: 3.5em;
+  }
+}
+

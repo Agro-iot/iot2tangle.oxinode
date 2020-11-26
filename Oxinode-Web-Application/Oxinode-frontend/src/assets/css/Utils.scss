@@ -1,0 +1,22 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius!important;
+  -moz-border-radius: $radius!important;
+  border-radius: $radius!important;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin background($url) {
+  background: {
+	image: $url;
+	size: 100% 100%;
+	repeat: no-repeat;
+  }
+}
+
+
+

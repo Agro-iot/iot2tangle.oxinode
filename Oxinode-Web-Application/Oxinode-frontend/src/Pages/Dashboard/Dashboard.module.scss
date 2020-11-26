@@ -1,0 +1,45 @@
+.listDevice{
+  margin-top: 1rem;
+  width: 100%!important;
+}
+
+.switchButton{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 5rem;
+  width: 5rem;
+
+  i{
+    font-size: 4em!important;
+    transform: translateY(20%);
+  }
+}
+
+.colorPerla{
+  background-color: #f2faf5;
+
+  &:hover, &:active, &:focus{
+    background-color: #f2faf5;
+  }
+}
+
+.iconOptions{
+  top: 1em;
+  right: 1em;
+  svg{
+    font-size: 1.2em;
+    color: black;
+  }
+  background-color: transparent!important;
+  box-shadow: unset;
+
+  &:active, &:hover, &:focus{
+    background-color: transparent;
+  }
+}
+
+.deviceCard{
+    height: 16rem!important;
+}
+

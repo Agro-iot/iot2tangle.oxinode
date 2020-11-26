@@ -1,0 +1,192 @@
+@import "../../assets/css/Utils";
+@import "../../assets/css/Variables";
+
+.bg-login {
+  @include background(url("../../assets/img/background.jpeg"));
+  align-items: center;
+  position: fixed;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.img-login {
+  display: block;
+  height: 100%;
+
+  img {
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 100%;
+	filter: saturate(300%);
+  }
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  width: 48%;
+  box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.75)
+}
+
+.login-content {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  display: flex;
+
+  h2 {
+	color: #333;
+	font-size: 2.9rem;
+	margin-top: 35px;
+  }
+}
+
+$margin: 20px;
+.input-field {
+  height: 15px;
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+.form-Login {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-login {
+  margin-top: 1.5rem;
+}
+
+.loginIconUser {
+  padding: 0;
+  margin-top: 11px;
+  margin-bottom: -3px;
+  zoom: 5;
+  color: $cafeClaro;
+}
+
+.title {
+  font-size: 1.9rem !important;
+}
+
+.input-field {
+  input[type=text], input[type=password], input[type=text]:focus, input[type=password]:focus {
+	border-bottom-width: 1px;
+  }
+}
+
+.login-container, .form-Login, .login-content {
+  border-radius: 0 20px 20px 0;
+}
+
+.img-login {
+  border-radius: 20px 0 0 20px;
+}
+
+.login-content {
+  padding: 0;
+  margin: 0;
+}
+
+.helper-text {
+  margin-top: 0;
+}
+
+.form-Login {
+  .row {
+	width: 100% !important;
+
+	.input-field {
+	  width: 100% !important;
+	  margin-bottom: 1em;
+
+	  .helper-text {
+		margin-top: 0;
+	  }
+
+	  input {
+		padding-top: 0.3em;
+		height: 1.9rem;
+	  }
+	}
+  }
+}
+
+// Movil
+@media (min-width: 320px) and (max-width: 600px) {
+  .img-login {
+	display: none;
+  }
+
+  .login-container {
+	display: block;
+	width: 100%;
+	margin: auto;
+	padding-left: 0;
+  }
+
+  .title {
+	margin-bottom: 35px;
+  }
+
+  .login-responsive {
+	text-align: center;
+	width: 85%;
+	margin: auto;
+	display: flex;
+	box-shadow: 10px 10px 18px -2px rgba(0, 0, 0, 0.75);
+  }
+
+  .loginIconUser {
+	margin-top: 5px;
+  }
+
+  .bg-login {
+	background-color: $cafeClaro;
+	background-image: unset;
+	background-repeat: no-repeat;
+  }
+
+  .login-container, form, .login-content {
+	border-radius: 20px;
+  }
+
+  .login-container {
+	box-shadow: unset;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .login-content h2 {
+	font-size: 2.4rem;
+  }
+}
+
+// Tablet
+@media screen and (orientation: landscape) and (max-height: 500px) {
+
+  .img-login {
+	display: none;
+  }
+
+  .login-content {
+	margin-top: 200px;
+	border-radius: 20px;
+  }
+
+  .login-container {
+	margin-top: 12em;
+	margin-bottom: 6em;
+	display: flex;
+	width: 60%;
+	box-shadow: unset;
+  }
+}
